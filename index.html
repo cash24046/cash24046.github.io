@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thumbspanel</title>
+    <style media="screen">
+      div {
+        border: 1px solid blue;
+        background-color: cyan;
+        margin: 5px;
+        padding: 5px;
+      }
+      #content {
+        border: 4px dotted white;
+        width: 60%;
+        margin: auto;
+        background-color: blue;
+      }
+      #headerBox {
+
+      }
+      .linksBox {
+
+      }
+      /* Combine Selectors */
+      .linksBox, .textBox {
+        border-radius: 10px;
+      }
+      /*selector for all textBoxes*/
+      .textbox {
+        overflow: auto;
+      }
+      /* selector for only images inside of textBoxes */
+      .textBox img {
+        width: 18%;
+        clear: both;
+      }
+      .f-left {
+        float: left;
+      }
+      .f-right {
+        float: right;
+      }
+      a {}
+      a:visited {}
+      a:hover {}
+      body {
+        font-family:   cursive;
+
+      }
+
+
+      @media (max-width: 600px) {
+        #content {
+          width: 100%;
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <div id="headerBox">
+        <h1>Thumbspanel</h1>
+      </div>
+      <div class="linksBox">
+        <p><a href="http://172.21.3.4:5000/tutd?thumb=up">UP</a></p>
+        <p><a href="http://172.21.3.4:5000/tutd?thumb=wiggle">WIGGLE</a></p>
+        <p><a href="http://172.21.3.4:5000/tutd?thumb=down">DOWN</a></p>
+        <p><a href="http://172.21.3.4:5000/tutd?thumb=oops">BRUH</a></p>
+        <p><a href="game.html">GAME</a></p>
+      </div>
+      <div class="textBox">
+        <img class="f-left" src="img/dog.jpg" alt="dog with no neck"/>
+        <p>this dog has no neck.</p>
+        <img class="f-right" src="img/dog2.jpg" alt="also has no neck"/>
+        <p>this dog also has no neck</p>
+        <img class="f-left" src="img/sad_dog.jpg" alt="sad dog"/>
+        <p>this dog is sad because he has no neck.</p>
+      </div>
+      <div class="linksBox">
+        <p><a href="#">Example Link</a></p>
+        <p><a href="#">Example Link</a></p>
+        <p><a href="#">Example Link</a></p>
+      </div>
+    </div>
+  </body>
+</html>
